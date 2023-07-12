@@ -22,7 +22,7 @@ class application:
         self.status = True
         print("status changed")
     def tickfunctionality(self):
-        #what it does each tick
+            #what it does each tick
             #write to buffer
             #update local values
             #check values for fault codes
