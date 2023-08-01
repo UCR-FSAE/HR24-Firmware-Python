@@ -1,4 +1,5 @@
-class application:
+import connections
+class application(connections):
     def __init__(self):
         try:
             self.initializeHW(self)
@@ -13,6 +14,8 @@ class application:
         print("hardware initialized")
     def initializeConnections(self):
         #this is where we initialize I/O
+        #we initialize IO and check connections using handshakes and checks
+
         print("connection initialized")
     def initializeVariables(self):
         #this is where we initialize variables,
