@@ -1,4 +1,4 @@
 import can
 
-class connections:
-    def checkCANBUS(self):
+#class connections:
+    #def checkCANBUS(self):
