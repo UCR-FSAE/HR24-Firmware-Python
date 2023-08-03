@@ -1,27 +1,35 @@
 class application:
     def __init__(self):
         try:
-            self.initializeHW(self)
-            self.initializeConnections(self)
-            self.initializeVariables(self)
-            self.setStatus(self)
+            self.initializeHW()
+            self.initializeConnections()
+            self.initializeVariables()
+            self.setStatus()
         except:
             self.noFault = False
             print("initialization failed")
+    
     def initializeHW(self):
         #this is where you initialize hardware
         print("hardware initialized")
+        
     def initializeConnections(self):
         #this is where we initialize I/O
         print("connection initialized")
+
     def initializeVariables(self):
         #this is where we initialize variables,
-        #i.e. self.someVariable = defaultValue
+        #i.e. self.SsomeVariable = defaultValue
         print("variables initialized")
+
     def setStatus(self):
         self.status = True
         print("status changed")
+
     def tickfunctionality(self):
+        print("tick")
+        #Add part of the function for testing
+        self.noFault = False
             #what it does each tick
             #write to buffer
             #update local values
