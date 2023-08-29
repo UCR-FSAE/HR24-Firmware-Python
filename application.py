@@ -1,6 +1,5 @@
 import connections
-#class application(connections):
-class application():
+class application(connections):
     def __init__(self):
         try:
             self.initializeHW()

@@ -1,4 +1,4 @@
-import bloom-filter
+import bloom_filter
 import config
 
 class fault_conditions():
