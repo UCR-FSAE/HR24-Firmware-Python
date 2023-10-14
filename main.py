@@ -1,4 +1,4 @@
-import application
+from application import application
 
 def __main__():
     app = application()
@@ -11,3 +11,6 @@ def __main__():
             app.noFault = False
             #grab error from app class
             #app.errorcode or something like that
+
+if __name__ == '__main__':
+    __main__()

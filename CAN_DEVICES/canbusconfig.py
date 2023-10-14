@@ -5,13 +5,20 @@ Different operating modes, etc
 
 '''
 
-# settings for accessing different can objects, etc
-ports = dict(
-    virtual = 'vcan0',
-    usb = 'can0',
-    pin = 'can1'
-)
+from configparser import ConfigParser
 
-interface = dict(
-    socketcan = 'socketcan',
-)
+config = ConfigParser()
+
+# settings for accessing different can objects, etc
+config["Ports"] = {
+    "virtual": 'vcan0',
+    "usb": 'can0',
+    "pin": 'can1',
+}
+
+config["Inferfaces"] = {
+    "SocketCan" : 'socketcan'
+}
+
+with open("canbus_config.ini", "w") as file:
+    config.write(file)
