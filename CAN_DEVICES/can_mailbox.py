@@ -32,7 +32,7 @@ class mailbox(can.BufferedReader):
             case _:
                self.current_mailbox.append(msg) 
     
-    def distrube_messages(self):
+    def distribute_messages(self):
         print("bloom filter")
 
 
