@@ -35,9 +35,7 @@ class CANBUS():
     #function to shutdown canbus system
     def shutdown(self):
         print("shutting down")
-        # self.temp_listner.stop()
-        # self.mail_box.stop()
-        self.can_notifer.stop()
+        self.can_notifier.stop()
         self.first_bus.shutdown()
 
 
