@@ -15,9 +15,9 @@ class application(connections):
         print("hardware initialized")
         
     def initializeConnections(self):
-        #this is where we initialize I/O
+        
         #we initialize IO and check connections using handshakes and checks
-
+        #this is where we initialize I/O
         print("connection initialized")
 
     def initializeVariables(self):
